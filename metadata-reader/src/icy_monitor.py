@@ -75,6 +75,9 @@ def print_title(author, title):
 
 
 def post_song(artist, track):
+    if artist.lower().startswith('Radio 357'):
+        print('It\'s Radio 357!')
+        return
     print('Title: {} - {}'.format(artist, track))
     tries = 5
     while tries:
@@ -85,6 +88,10 @@ def post_song(artist, track):
             logging.error(f'Request failed for "{artist} - {track}". Try: {tries}')
             tries -= 1
             time.sleep(10)
+        except Exception as error:
+            logging.error(f'{error}')
+            break
+    print('Waiting for next track...')
 
 
 

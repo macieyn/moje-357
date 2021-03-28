@@ -9,6 +9,22 @@ api = PlaylistDto.api
 data_resp = PlaylistDto.data_resp
 
 
+
+@api.route("/")
+class PlaylistsGet(Resource):
+    @api.doc(
+        "Get all playlists",
+        responses={
+            200: ("Playlists data successfully sent", data_resp),
+            404: "Playlist not found!",
+        },
+    )
+    # @jwt_required
+    def get(self):
+        """ Get a specific track's data by track id """
+        return PlaylistService.get_all_data()
+
+
 @api.route("/<int:playlist_id>")
 class PlaylistGet(Resource):
     @api.doc(
@@ -22,6 +38,7 @@ class PlaylistGet(Resource):
     def get(self, playlist_id):
         """ Get a specific track's data by track id """
         return PlaylistService.get_playlist_data(playlist_id)
+
 
 
 

@@ -5,7 +5,7 @@ from app.api.tracks.dto import TrackDto
 
 class PlaylistDto:
 
-    api = Namespace("playlist", description="Playlist related operations.")
+    api = Namespace("playlists", description="Playlist related operations.")
     playlist_obj = api.model(
         "Playlist object",
         {
