@@ -3,6 +3,10 @@
 import re
 import requests
 import sys
+import logging
+import traceback
+from requests.exceptions import ConnectionError
+import time
 
 from io import BytesIO
 
@@ -70,7 +74,21 @@ def print_title(author, title):
     print('Title: {} - {}'.format(author, title))
 
 
-if __name__ == '__main__':
+def post_song(artist, track):
+    print('Title: {} - {}'.format(artist, track))
+    tries = 1
+    while True:
+        try:
+            repsonse = requests.post('http://127.0.0.1:5000/api/track/', json={'q': f'{artist} {track}'})
+        except ConnectionError:
+            logging.error(f'Request failed for "{artist} - {track}". Try: {tries}')
+            tries += 1
+            if tries > 5:
+                break
+            time.sleep(10)
 
+
+
+if __name__ == '__main__':
     stream_url = 'https://n13a-eu.rcs.revma.com/an1ugyygzk8uv?rj-ttl=5&rj-tok=AAABeHhJIacAZ6M8eJFwkxiumQ'
-    icy_monitor(stream_url, callback=print_title)
+    icy_monitor(stream_url, callback=post_song)
