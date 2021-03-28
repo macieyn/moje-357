@@ -1,0 +1,91 @@
+{
+    "album": {
+      "album_type": "album",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/6ASsF4ZKpJlpeRF7HarDfe"
+          },
+          "href": "https://api.spotify.com/v1/artists/6ASsF4ZKpJlpeRF7HarDfe",
+          "id": "6ASsF4ZKpJlpeRF7HarDfe",
+          "name": "Linia Nocna",
+          "type": "artist",
+          "uri": "spotify:artist:6ASsF4ZKpJlpeRF7HarDfe"
+        }
+      ],
+      "available_markets": [
+        "AD"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/0SfHFTzoXriCbIPGEGub0G"
+      },
+      "href": "https://api.spotify.com/v1/albums/0SfHFTzoXriCbIPGEGub0G",
+      "id": "0SfHFTzoXriCbIPGEGub0G",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab67616d0000b273e78988e2744bee87a3bc48d9",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/ab67616d00001e02e78988e2744bee87a3bc48d9",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/ab67616d00004851e78988e2744bee87a3bc48d9",
+          "width": 64
+        }
+      ],
+      "name": "Znikam na chwilę",
+      "release_date": "2018-03-16",
+      "release_date_precision": "day",
+      "total_tracks": 12,
+      "type": "album",
+      "uri": "spotify:album:0SfHFTzoXriCbIPGEGub0G"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/6ASsF4ZKpJlpeRF7HarDfe"
+        },
+        "href": "https://api.spotify.com/v1/artists/6ASsF4ZKpJlpeRF7HarDfe",
+        "id": "6ASsF4ZKpJlpeRF7HarDfe",
+        "name": "Linia Nocna",
+        "type": "artist",
+        "uri": "spotify:artist:6ASsF4ZKpJlpeRF7HarDfe"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/2zQ7bx3nclgi5a51zHrBhm"
+        },
+        "href": "https://api.spotify.com/v1/artists/2zQ7bx3nclgi5a51zHrBhm",
+        "id": "2zQ7bx3nclgi5a51zHrBhm",
+        "name": "Buslav",
+        "type": "artist",
+        "uri": "spotify:artist:2zQ7bx3nclgi5a51zHrBhm"
+      }
+    ],
+    "available_markets": [
+      "AD"
+    ],
+    "disc_number": 1,
+    "duration_ms": 195200,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "PLW011800006"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/3Xf0wVt7D7ast9Ctm7RQKx"
+    },
+    "href": "https://api.spotify.com/v1/tracks/3Xf0wVt7D7ast9Ctm7RQKx",
+    "id": "3Xf0wVt7D7ast9Ctm7RQKx",
+    "is_local": false,
+    "name": "Tak jak my",
+    "popularity": 18,
+    "preview_url": "https://p.scdn.co/mp3-preview/49c0b7e5b50b54e7c6dc7f63db05bd8d7c985f7f?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number": 9,
+    "type": "track",
+    "uri": "spotify:track:3Xf0wVt7D7ast9Ctm7RQKx"
+  }
