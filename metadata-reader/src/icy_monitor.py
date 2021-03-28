@@ -76,15 +76,14 @@ def print_title(author, title):
 
 def post_song(artist, track):
     print('Title: {} - {}'.format(artist, track))
-    tries = 1
-    while True:
+    tries = 5
+    while tries:
         try:
             repsonse = requests.post('http://127.0.0.1:5000/api/track/', json={'q': f'{artist} {track}'})
+            break
         except ConnectionError:
             logging.error(f'Request failed for "{artist} - {track}". Try: {tries}')
-            tries += 1
-            if tries > 5:
-                break
+            tries -= 1
             time.sleep(10)
 
 
